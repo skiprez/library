@@ -1,0 +1,289 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background: #ADA996;
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+input:focus {
+    outline: none;
+}
+
+.text {
+    font-weight: 500;
+}
+
+.display {
+    width: 800px;
+    height: 800px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: #C9D6FF;
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF);
+    box-shadow: 3px 5px 5px black;
+    border-radius: 10px;
+}
+
+.header {
+    display: inline-flex;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.home {
+    background: #757F9A;
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
+    background: linear-gradient(to right, #D7DDE8, #757F9A); 
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px black;
+    margin: 10px;
+    padding: 5px;
+    transition: ease-in-out 200ms;
+}
+
+.books {
+    background: #757F9A;
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
+    background: linear-gradient(to right, #D7DDE8, #757F9A); 
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px black;
+    margin: 10px;
+    padding: 5px;
+    transition: ease-in-out 200ms;
+}
+
+.librarians {
+    background: #757F9A;
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
+    background: linear-gradient(to right, #D7DDE8, #757F9A); 
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px black;
+    margin: 10px;
+    padding: 5px;
+    transition: ease-in-out 200ms;
+}
+
+.account {
+    background: #757F9A;
+    background: -webkit-linear-gradient(to right, #D7DDE8, #757F9A);
+    background: linear-gradient(to right, #D7DDE8, #757F9A); 
+    border-radius: 5px;
+    box-shadow: 2px 3px 3px black;
+    margin: 10px;
+    padding: 5px;
+    transition: ease-in-out 200ms;
+}
+
+.home:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.books:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.librarians:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.account:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.screen {
+    margin-top: 200px;
+}
+
+.screenb {
+    margin-top: 100px;
+}
+
+.screenl {
+    margin-top: 200px;
+}
+
+.screenlog {
+    margin-top: 200px;
+}
+
+.id {
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    font-weight: 500;
+    transition: ease-in-out 200ms;
+}
+
+.password {
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    font-weight: 500;
+    transition: ease-in-out 200ms;
+}
+
+.login {
+    /* margin-left: auto;
+    margin-right: auto;
+    display: block; */
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    font-weight: 500;
+    transition: ease-in-out 200ms;
+}
+
+.sub {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    transition: ease-in-out 200ms;
+}
+
+.sub:hover {
+    cursor: pointer;
+    transform: scale(0.9);
+}
+
+.login:hover {
+    cursor: text;
+    transform: scale(0.9);
+}
+
+.id:hover {
+    cursor: text;
+    transform: scale(0.9);
+}
+
+.password:hover {
+    cursor: text;
+    transform: scale(0.9);
+}
+
+.id:focus {
+    transform: scale(0.9);
+}
+
+.login:focus {
+    transform: scale(0.9);
+}
+
+.password:focus {
+    transform: scale(0.9);
+}
+
+.librarian {
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.book {
+    display: inline-flex;
+    font-weight: 500;
+}
+
+.able {
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.img {
+    width: 158px;
+    height: 225;
+}
+
+.book-title {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.book-desc {
+    margin-right: 10px;
+}
+
+.arrows {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+.arrowl {
+    width: 20px;
+    height: 20px;
+    background: #C9D6FF;
+    border-radius: 5px;
+    transition: ease-in-out 200ms;
+    box-shadow: 1px 2px 2px black;
+}
+
+.arrowr {
+    width: 20px;
+    height: 20px;
+    background: #C9D6FF;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: ease-in-out 200ms;
+    box-shadow: 1px 2px 2px black;
+}
+
+.arrowl:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.arrowr:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.footerlog {
+    margin-top: 429px;
+}
+
+.footerl {
+    margin-top: 327px;
+}
+
+.footerb {
+    margin-top: 20px;
+}
+
+.footer {
+    margin-top: 310px;
+}
