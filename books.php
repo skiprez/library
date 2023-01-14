@@ -1,5 +1,7 @@
 <?php 
 
+    // require "account.php";
+
     require "database.php"; 
 
     $sql = "SELECT ilosc FROM ksiazki WHERE id_ksiazki = 1";

@@ -1,4 +1,10 @@
-<?php require "database.php"; ?>
+<?php 
+
+    require "database.php"; 
+ 
+    // require "account.php";
+ 
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

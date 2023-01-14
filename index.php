@@ -1,4 +1,8 @@
-<?php require "database.php"; ?>
+<?php 
+    
+    require "database.php";
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

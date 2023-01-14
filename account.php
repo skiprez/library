@@ -42,13 +42,21 @@
                 <div class="data">
                     <?php
                     
-                        $sql = "SELECT l.id_ucznia, l.login, l.haslo, u.id_ucznia, u.imie, u.nazwisko, u.id_wypozyczenia, w.id_wypozyczenia, w.id_ucznia, w.data, w.data_oddania w.oddana FROM logins l LEFT JOIN uczniowie u ON l.id_ucznia = u.id_ucznia WHERE id_ucznia=$id AND login=$login AND haslo=$password";
+                        $sql = "SELECT l.id_ucznia, l.login, l.haslo, u.id_ucznia, u.imie, u.nazwisko, u.id_wypozyczenia, w.id_wypozyczenia, w.id_ucznia, w.data, w.data_oddania, w.oddana 
+                        FROM logins l LEFT JOIN uczniowie u ON l.id_ucznia = u.id_ucznia 
+                        LEFT JOIN wypozyczenia w 
+                        ON l.id_ucznia = w.id_ucznia 
+                        LEFT JOIN uczniowie u 
+                        ON u.id_wypozyczenia = w.id_wypozyczenia 
+                        WHERE l.id_ucznia=$id AND l.login=$login AND l.haslo=$password";
                         $result = $link->query($sql);
 
                         if ($result->num_rows > 0) {
                             while($row = $result->fetch_assoc()) {
-                              echo "imię: ".$row['imie']." "."Nazwisko: ".$row['nazwisko']." "."ID: ".$row['id_ucznia'];
+                              echo "Imię: ".$row['l.imie']." "."Nazwisko: ".$row['l.nazwisko']." "."ID: ".$row['l.id_ucznia'];
                             }
+                        }else{
+                            echo "Jesteś nie zalogowany";
                         }
                     ?>
                 </div>
