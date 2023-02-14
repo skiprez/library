@@ -43,11 +43,7 @@
                     <?php
                     
                         $sql = "SELECT l.id_ucznia, l.login, l.haslo, u.id_ucznia, u.imie, u.nazwisko, u.id_wypozyczenia, w.id_wypozyczenia, w.id_ucznia, w.data, w.data_oddania, w.oddana 
-                        FROM logins l LEFT JOIN uczniowie u ON l.id_ucznia = u.id_ucznia 
-                        LEFT JOIN wypozyczenia w 
-                        ON l.id_ucznia = w.id_ucznia 
-                        LEFT JOIN uczniowie u 
-                        ON u.id_wypozyczenia = w.id_wypozyczenia 
+                        FROM logins l, uczniowie u, wypozyczenia w 
                         WHERE l.id_ucznia=$id AND l.login=$login AND l.haslo=$password";
                         $result = $link->query($sql);
 
